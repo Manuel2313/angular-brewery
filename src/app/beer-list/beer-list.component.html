@@ -1,0 +1,41 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Imagen</th> 
+        <th scope="col">Cerveza</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Stock</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img class="img" [src]="beer.image" [alt]="beer.nombre"></td>
+        <th scope="row">{{beer.nombre}}</th>
+        <td>{{beer.descripcion}}</td>
+        <td>${{beer.precio}}</td>
+        <td>{{beer.stock}}</td>
+      </tr>
+      <tr>
+        <td><img class="img" [src]="beer.image" [alt]="beer.nombre"></td>
+        <th scope="row">Red Irish</th>
+        <td>Roja y frutada</td>
+        <td>$180</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td><img class="img" [src]="beer.image" [alt]="beer.nombre"></td>
+        <th scope="row">APA</th>
+        <td>Amarga sabor a lupulo</td>
+        <td>$180</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td><img class="img" [src]="beer.image" [alt]="beer.nombre"></td>
+        <th scope="row">Honey</th>
+        <td>Rubia fuerte sabor a miel</td>
+        <td>$200</td>
+        <td>Si</td>
+      </tr>
+    </tbody>
+  </table>
